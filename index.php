@@ -84,7 +84,7 @@
                         </div>
                         
                         <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                            <button class="btn btn--radius-2 btn--blue" id="submit" type="button">Submit</button>
                         </div>
                     </form>
                 </div>
