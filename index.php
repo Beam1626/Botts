@@ -65,7 +65,7 @@
                                 <div class="col-2">
                                     <div class="input-group">
                                         <label class="label">Phone Number</label>
-                                        <input class="input--style-4" type="text" name="phone">
+                                        <input class="input--style-4" type="text" name="phone" onKeyUp="if(this.value*1!=this.value) this.value='' ;" pattern="[0]{1}[0-9]{9}">
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@
                                         <label class="label">Gender</label>
                                         <div class="p-t-10">
                                             <label class="radio-container m-r-45">Male
-                                                <input type="radio" checked="checked" name="gender" value="male">
+                                                <input type="radio"  name="gender" value="male" checked>
                                                 <span class="checkmark"></span>
                                             </label>
                                             <label class="radio-container">Female
