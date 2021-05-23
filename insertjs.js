@@ -33,7 +33,7 @@ function SubForm() {
 function check(id) {
     var first_name = $("#myform").find('input[name="first_name"]').val();
     var last_name = $("#myform").find('input[name="last_name"]').val();
-    var gender = $("#myform").find('input[type="raido"]').val();
+    var gender = $("#myform").find('input[name="gender"]').val();
     var phone = $("#myform").find('input[name="phone"]').val();
     var birthday =$("#myform").find('input[name="birthday"]').val();
     console.log(id);
