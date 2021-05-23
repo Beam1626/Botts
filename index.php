@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <form action="regisemp.php" method="post">
+    <form action="regisemp?.php" method="post">
     <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
@@ -91,6 +91,7 @@
             </div>
         </div>
     </div>
+ 
 
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -101,7 +102,12 @@
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
-</form>
+    </form>
+    
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.3.0/sdk.js"></script>
+    <script src="insertjs.js"></script>
+
+
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
