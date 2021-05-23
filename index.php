@@ -33,7 +33,7 @@
                 <div class="card card-4">
                     <div class="card-body">
                         <h2 class="title">Registration Form</h2>
-                        <form method="POST">
+                        
                             <div class="row row-space">
                                 <div class="col-2">
                                     <div class="input-group">
@@ -84,14 +84,14 @@
                                 </div>
 
                                 <div class="p-t-15">
-                                    <button class="btn btn--radius-2 btn--blue" id="submit" type="submit">Submit</button>
+                                    <button class="btn btn--radius-2 btn--blue" id="submit" type="button">Submit</button>
                                 </div>
-                        </form>
+                        
                     </div>
                 </div>
             </div>
         </div>
-
+ </form>
 
         <!-- Jquery JS-->
         <script src="vendor/jquery/jquery.min.js"></script>
@@ -106,7 +106,7 @@
 
         <script src="https://static.line-scdn.net/liff/edge/versions/2.3.0/sdk.js"></script>
         <script src="insertjs.js"></script>
-    </form>
+   
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
