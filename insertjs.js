@@ -11,8 +11,9 @@ liff.init(
     },
     (err) => console.error(err.code, error.message)
   );
+function SubForm() {
   
-  $("#submit").click(function () {
+  // $("#submit").click(function () {
     liff.init(
       {
         liffId: "1655985273-dPXMVrbZ",
@@ -27,7 +28,8 @@ liff.init(
           console.log("error", err);
         })
     );
-  });
+  // });
+}
 function check(id) {
     var first_name = $("#myform").find('input[name="first_name"]').val();
     var last_name = $("#myform").find('input[name="last_name"]').val();
