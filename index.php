@@ -103,7 +103,7 @@
     <!-- Main JS-->
     <script src="js/global.js"></script>
     </form>
-    
+
     <script src="https://static.line-scdn.net/liff/edge/versions/2.3.0/sdk.js"></script>
     <script src="insertjs.js"></script>
 
