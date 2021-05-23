@@ -84,7 +84,7 @@
                                 </div>
 
                                 <div class="p-t-15">
-                                    <button class="btn btn--radius-2 btn--blue" id="submit" type="button">Submit</button>
+                                    <button class="btn btn--radius-2 btn--blue" id="submit" type="submit">Submit</button>
                                 </div>
                         </form>
                     </div>
@@ -102,11 +102,11 @@
 
         <!-- Main JS-->
         <script src="js/global.js"></script>
+
+
+        <script src="https://static.line-scdn.net/liff/edge/versions/2.3.0/sdk.js"></script>
+        <script src="insertjs.js"></script>
     </form>
-
-    <script src="https://static.line-scdn.net/liff/edge/versions/2.3.0/sdk.js"></script>
-    <script src="insertjs.js"></script>
-
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
