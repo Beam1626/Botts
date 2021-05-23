@@ -29,7 +29,7 @@ liff.init(
     );
   });
 function check(id) {
-    var first_name = $("#myform").find('select[name="first_name"]').val();
+    var first_name = $("#myform").find('input[name="first_name"]').val();
     var last_name = $("#myform").find('input[name="last_name"]').val();
     var gender = $("#myform").find('input[name="gender"]').val();
     var phone = $("#myform").find('input[name="phone"]').val();
@@ -86,7 +86,7 @@ function check(id) {
   function insert(id) {
     var id = id;
   
-    var first_name = $("#myform").find('select[name="first_name"]').val();
+    var first_name = $("#myform").find('input[name="first_name"]').val();
     var last_name = $("#myform").find('input[name="last_name"]').val();
     var gender = $("#myform").find('input[name="gender"]').val();
     var phone = $("#myform").find('input[name="phone"]').val();
