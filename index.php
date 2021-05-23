@@ -42,13 +42,13 @@
                                 <div class="col-2">
                                     <div class="input-group">
                                         <label class="label">first name</label>
-                                        <input class="input--style-4" type="text" name="first_name">
+                                        <input class="input--style-4" type="text" name="first_name"/>
                                     </div>
                                 </div>
                                 <div class="col-2">
                                     <div class="input-group">
                                         <label class="label">last name</label>
-                                        <input class="input--style-4" type="text" name="last_name">
+                                        <input class="input--style-4" type="text" name="last_name"/>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                                     <div class="input-group">
                                         <label class="label">Birthday</label>
                                         <div class="input-group-icon">
-                                            <input class="input--style-4 js-datepicker" type="date" name="birthday">
+                                            <input class="input--style-4 js-datepicker" type="date" name="birthday"/>
                                             <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                         </div>
                                     </div>
@@ -75,11 +75,11 @@
                                         <label class="label">Gender</label>
                                         <div class="p-t-10">
                                             <label class="radio-container m-r-45">Male
-                                                <input type="radio"  name="gender" value="male">
+                                                <input type="radio"  name="gender" value="male"/>
                                                 <span class="checkmark"></span>
                                             </label>
                                             <label class="radio-container">Female
-                                                <input type="radio" name="gender" value="female">
+                                                <input type="radio" name="gender" value="female"/>
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
