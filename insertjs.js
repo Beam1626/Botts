@@ -34,6 +34,12 @@ function check(id) {
     var gender = $("#myform").find('input[name="gender"]').val();
     var phone = $("#myform").find('input[name="phone"]').val();
     var birthday =$("#myform").find('input[name="birthday"]').val();
+    console.log(first_name);
+    console.log(last_name);
+    console.log(gender);
+    console.log(phone);
+    console.log(birthday);
+  
     if (
         first_name == null ||
         last_name == null ||
