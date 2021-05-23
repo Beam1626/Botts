@@ -24,6 +24,8 @@
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -94,7 +96,7 @@
  </form>
 
         <!-- Jquery JS-->
-        <script src="vendor/jquery/jquery.min.js"></script>
+        <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
         <!-- Vendor JS-->
         <script src="vendor/select2/select2.min.js"></script>
         <script src="vendor/datepicker/moment.min.js"></script>
