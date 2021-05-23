@@ -75,7 +75,7 @@
                                         <label class="label">Gender</label>
                                         <div class="p-t-10">
                                             <label class="radio-container m-r-45">Male
-                                                <input type="radio"  name="gender" value="male" checked>
+                                                <input type="radio"  name="gender" value="male">
                                                 <span class="checkmark"></span>
                                             </label>
                                             <label class="radio-container">Female
