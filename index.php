@@ -74,11 +74,11 @@
                                     <div class="input-group">
                                         <label class="label">Gender</label>
                                         <div class="p-t-10">
-                                        <label class="radio-container m-r-45">Male
+                                        <label class="radio-container m-r-45" for="male">Male
                                         <input type="radio" id="male" name="gender" value="male">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="radio-container">Female
+                                        <label class="radio-container" for="female">Female
                                         <input type="radio" id="female" name="gender" value="female">
                                             <span class="checkmark"></span>
                                         </label>
