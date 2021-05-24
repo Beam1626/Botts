@@ -51,14 +51,14 @@ function check(id) {
       birthday == "" 
   ) {
     swal({
-      title: "ข้อมูลไม่ครบครับ",
+      title: "ข้อมูลไม่ครบค่ะ",
       text: "กรุณาลองอีกครั้ง",
       icon: "error",
       button: "Submit",
     });
   } else {
     swal({
-      title: "เช็คความถูกต้องด้วยครับ",
+      title: "เช็คความถูกต้องด้วยค่ะ",
       text:
         "ชื่อ : " +
         first_name +
