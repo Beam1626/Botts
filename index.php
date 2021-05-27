@@ -22,10 +22,20 @@
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
+
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Test -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 
 
 </head>
@@ -37,80 +47,82 @@
                 <div class="card card-4">
                     <div class="card-body">
                         <h2 class="title">Registration Form</h2>
-                        
-                            <div class="row row-space">
-                                <div class="col-2">
-                                    <div class="input-group">
-                                        <label class="label">first name</label>
-                                        <input class="input--style-4" type="text" name="first_name"/>
-                                    </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">first name</label>
+                                    <input class="input--style-4" type="text" name="first_name" />
                                 </div>
-                                <div class="col-2">
-                                    <div class="input-group">
-                                        <label class="label">last name</label>
-                                        <input class="input--style-4" type="text" name="last_name"/>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">last name</label>
+                                    <input class="input--style-4" type="text" name="last_name" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Birthday</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4 js-datepicker" type="date" name="birthday" />
+                                        <!-- <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i> -->
                                     </div>
                                 </div>
                             </div>
-                            <div class="row row-space">
-                                <div class="col-2">
-                                    <div class="input-group">
-                                        <label class="label">Birthday</label>
-                                        <div class="input-group-icon">
-                                            <input class="input--style-4 js-datepicker" type="date" name="birthday"/>
-                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <div class="input-group">
-                                        <label class="label">Phone Number</label>
-                                        <input class="input--style-4" type="text" name="phone" onKeyUp="if(this.value*1!=this.value) this.value='' ;" pattern="[0]{1}[0-9]{9}">
-                                    </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Phone Number</label>
+                                    <input class="input--style-4" type="text" name="phone" onKeyUp="if(this.value*1!=this.value) this.value='' ;" pattern="[0]{1}[0-9]{9}">
                                 </div>
                             </div>
-                            <div class="row row-space">
-                                <div class="col-2">
-                                    <div class="input-group">
-                                        <label class="label">Gender</label>
-                                        <div class="p-t-10">
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Gender</label>
+                                    <div class="p-t-10">
                                         <label class="radio-container m-r-45" for="male">Male
-                                        <input type="radio" id="male" name="gender" value="male">
+                                            <input type="radio" id="male" name="gender" value="male">
                                             <span class="checkmark"></span>
                                         </label>
                                         <label class="radio-container" for="female">Female
-                                        <input type="radio" id="female" name="gender" value="female">
+                                            <input type="radio" id="female" name="gender" value="female">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
-                                    </div>
-
                                 </div>
 
-                                <div class="p-t-15">
-                                    <button class="btn btn--radius-2 btn--blue" id="submit" onclick="SubForm()"  type="button">Submit</button>
-                                </div>
-                        
+                            </div>
+
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" id="submit" onclick="SubForm()" type="button">Submit</button>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
- </form>
+    </form>
 
-        <!-- Jquery JS-->
-         <script src="vendor/jquery/jquery.min.js"></script> 
-        <!-- Vendor JS-->
-        <script src="vendor/select2/select2.min.js"></script>
-        <script src="vendor/datepicker/moment.min.js"></script>
-        <script src="vendor/datepicker/daterangepicker.js"></script>
+    <!-- Jquery JS-->
+    <!-- <script src="vendor/jquery/jquery.min.js"></script>  -->
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!-- <script src="vendor/datepicker/moment.min.js"></script>
+        <script src="vendor/datepicker/daterangepicker.js"></script> -->
 
-        <!-- Main JS-->
-        <script src="js/global.js"></script>
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
 
 
-        <script src="https://static.line-scdn.net/liff/edge/versions/2.3.0/sdk.js"></script>
-        <script src="insertjs.js"></script>
-   
+    <!-- <script src="https://static.line-scdn.net/liff/edge/versions/2.3.0/sdk.js"></script> -->
+    <script src="insertjs.js"></script>
+
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
