@@ -52,7 +52,8 @@ include 'connec.php';
             font-size: 22px;
             font-weight: bold;
         }
-        hr{
+
+        hr {
             border: 1px solid gray;
         }
     </style>
@@ -81,7 +82,7 @@ include 'connec.php';
                             $sql = "SELECT Distinct tyre_1 FROM product";
                             $result1 = mysqli_query($conn, $sql); ?>
 
-                            <select id="tyre_1" name="tyre_1" class="selectpicker" size="3" data-actions-box="true" data-live-search="true" title="tyre_1" data-width="auto" multiple data-selected-text-format="count>3">
+                            <select id="tyre_1" name="tyre_1" class="selectpicker" size="3" data-actions-box="true" data-live-search="true" title="หน้ากว้างยาว" data-width="auto" multiple data-selected-text-format="count>3">
                                 <?php
                                 while ($row = mysqli_fetch_array($result1)) {
                                 ?>
@@ -99,7 +100,7 @@ include 'connec.php';
                             $sql = "SELECT Distinct tyre_2 FROM product";
                             $result1 = mysqli_query($conn, $sql); ?>
 
-                            <select id="tyre_2" name="tyre_2" class="selectpicker" title="tyre_2" size="3" data-actions-box="true" data-live-search="true" data-width="auto" multiple data-selected-text-format="count>3">
+                            <select id="tyre_2" name="tyre_2" class="selectpicker" title="แก้มยางสูง" size="3" data-actions-box="true" data-live-search="true" data-width="auto" multiple data-selected-text-format="count>3">
                                 <?php
                                 while ($row = mysqli_fetch_array($result1)) {
                                 ?>
@@ -117,7 +118,7 @@ include 'connec.php';
                             $sql = "SELECT Distinct tyre_3 FROM product";
                             $result1 = mysqli_query($conn, $sql); ?>
 
-                            <select id="tyre_3" name="tyre_3" class="selectpicker" title="tyre_3" size="3" data-actions-box="true" data-live-search="true" data-width="auto" multiple data-selected-text-format="count>3">
+                            <select id="tyre_3" name="tyre_3" class="selectpicker" title="เส้นผ่านศูนย์กลางกระทะล้อ" size="3" data-actions-box="true" data-live-search="true" data-width="auto" multiple data-selected-text-format="count>3">
                                 <?php
                                 while ($row = mysqli_fetch_array($result1)) {
                                 ?>
@@ -129,7 +130,7 @@ include 'connec.php';
                         </div>
 
                         <!-- Brand -->
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <?php
                             $sql = "SELECT Distinct brand FROM product";
                             $result1 = mysqli_query($conn, $sql); ?>
@@ -143,13 +144,15 @@ include 'connec.php';
                                     </option>";
                                 <?php } ?>
                             </select>
-                        </div>
+                        </div> -->
                         <!-- </div> -->
+
+                        <button type="button" class="form-group btn btn-primary" id="Reset" onClick="document.location.reload(true)">
+                            <i class="fas fa-sync"></i>
+                            RESET
+                        </button>
                     </div>
-                    <button type="button" class="form-group btn btn-primary" id="Reset" onClick="document.location.reload(true)">
-                        <i class="fas fa-sync"></i>
-                        RESET
-                    </button>
+
                 </form>
             </div>
         </div>
