@@ -38,13 +38,15 @@ if (isset($_POST['phone'])) {
 $timestamp =date("Y-m-d H:i:s");
 
     
-    //  $line_id = $_POST["line_id"];
-    //  $first_name = $_POST["first_name"];
-    //  $last_name = $_POST["last_name"]; 
-    //  $birthday = date("Y-m-d ");  	 
-    //  $gender = $_POST["gender"];    
-    //  $phone = $_POST["phone"];	 
+
      
+
+    $sql = "SELECT count(*)  FROM customer where line_id = '$line_id'";
+    $res = mysqli_query($conn, $sql);
+    $data = mysqli_fetch_array($res);
+    if ($data[0] != 0) {
+        echo 2;
+    }else{
      $str = "INSERT INTO customer (line_id,name_cus,surname_cus,birthday,gender,tel_cus,timeD) 
      VALUES ('$line_id','$first_name','$last_name','$birthday','$gender','$phone','$timestamp')";
     
@@ -53,4 +55,4 @@ $timestamp =date("Y-m-d H:i:s");
       } else {
         echo 1;
       }
-?>
+    }
