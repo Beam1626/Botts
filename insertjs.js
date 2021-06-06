@@ -4,13 +4,72 @@ liff.init(
   },
   () => {
     if (liff.isLoggedIn()) {
-      // runApp();
+      liff.init(
+        {
+          liffId: "1655985273-dPXMVrbZ",
+        },
+        liff
+          .getProfile()
+          .then((profile) => {
+            id = profile.userId;
+            runApp(id);
+          })
+          .catch((err) => {
+            console.log("error", err);
+          })
+      );
+          
     } else {
       liff.login();
+      liff.init(
+        {
+          liffId: "1655985273-dPXMVrbZ",
+        },
+        liff
+          .getProfile()
+          .then((profile) => {
+            id = profile.userId;
+            runApp(id);
+          })
+          .catch((err) => {
+            console.log("error", err);
+          })
+      );
     }
   },
   (err) => console.error(err.code, error.message)
 );
+
+function runApp(id){
+
+  $.ajax({
+    url: "regisemp.php",
+    type: "POST",
+    data: {
+      line_id: id,
+      
+    },
+    success: function (result) {
+      
+      if (result == 2) {
+        swal({
+          title: "คุณได้ทำการลงทะเบียนไว้แล้ว",
+          text: "",
+          icon: "warning",
+          button: "OK!",
+        }).then((value) => {
+          // liff.closeWindow();
+
+          window.location.assign("https://liff.line.me/1655985273-GQER4NMK");
+        });
+      }
+    },
+  });
+
+
+}
+
+
 
 var gender;
 $(document).ready(function () {
@@ -150,7 +209,7 @@ function insert(id) {
       } else if (result == 2) {
         swal({
           title: "คุณได้ทำการลงทะเบียนไว้แล้ว",
-          text: "กรุณาลองอีกครั้ง",
+          text: "",
           icon: "error",
           button: "OK!",
         }).then((value) => {

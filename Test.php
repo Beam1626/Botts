@@ -73,8 +73,8 @@ $query = mysqli_query($conn, $sql);
     <?php $i = 1;
     while ($result = mysqli_fetch_array($query)) { ?>
         <div class="row">
-            <div class="col-xl-4 col-md-6 text-center img-bottom">
-                <img data-u="image" src="https://www.b-quik.com/image/product/ProductManual/Image1/ML1955515PS3.jpg" class="img-fluid " onerror="this.onerror=null; this.src='https://www.b-quik.com/image/imagenull.png'" style="max-height: 318px">
+            <div class="col-xl-4 col-md-6 text-center img-bottom">      
+                <img data-u="image" src="<?php echo $result['pic_tyre']; ?>" class="img-fluid " onerror="this.onerror=null; this.src='<?php echo $result['pic_tyre']; ?>'"  style="max-width: 200px; max-height: 200px"">
             </div>
             <div class="col-xl-8 col-md-6">
             <img style="max-width: 145px; max-height: 44px" src="<?php echo $result['logo']; ?>" />
